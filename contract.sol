@@ -18,7 +18,6 @@ contract SimpleToken {
     // This mapping assigns an unsigned integer (the token balance) to an address (the token holder).
     mapping (address => uint) public balances;
 
-
   // When 'SimpleToken' contract is deployed:
   // 1. set the deploying address as the owner of the contract
   // 2. set the token balance of the owner to the total token supply
@@ -31,9 +30,24 @@ contract SimpleToken {
     function transfer(address receiver, uint amount) public {
         // The sender must have enough tokens to send
         require(amount <= balances[msg.sender], "Insufficient balance.");
-
+                
         // Adjusts token balances of the two addresses
         balances[msg.sender] -= amount;
-        balances[receiver] += amount;
+        balances[receiver] += amount;          
+        
     }
+
+
+function transfer(address receiver, uint256 numTokens) public override returns (bool) {
+        require(numTokens <= balances[msg.sender]);
+  
+        balances[msg.sender] = balances[msg.sender].sub(numTokens);
+        balances[receiver] = balances[receiver].add(numTokens);
+        emit Transfer(msg.sender, receiver, numTokens);
+        return true;
+    }
+
+  
+
+   
 }
