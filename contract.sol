@@ -12,11 +12,12 @@ If you want it to compile, either import it into contract.sol or copy and paste 
 contract SimpleToken {
     // An address is comparable to an email address - it's used to identify an account on Ethereum.
     address public owner;
-    uint256 public constant token_supply = 1000000000000;
+    uint256 public  token_supply = 1000000000000;
 
     // A mapping is essentially a hash table data structure.
     // This mapping assigns an unsigned integer (the token balance) to an address (the token holder).
     mapping (address => uint) public balances;
+
 
   // When 'SimpleToken' contract is deployed:
   // 1. set the deploying address as the owner of the contract
@@ -30,24 +31,11 @@ contract SimpleToken {
     function transfer(address receiver, uint amount) public {
         // The sender must have enough tokens to send
         require(amount <= balances[msg.sender], "Insufficient balance.");
-                
+
         // Adjusts token balances of the two addresses
         balances[msg.sender] -= amount;
-        balances[receiver] += amount;          
-        
+        balances[receiver] += amount;
+        token_supply -= amount;
+      
     }
-
-
-function transfer(address receiver, uint256 numTokens) public override returns (bool) {
-        require(numTokens <= balances[msg.sender]);
-  
-        balances[msg.sender] = balances[msg.sender].sub(numTokens);
-        balances[receiver] = balances[receiver].add(numTokens);
-        emit Transfer(msg.sender, receiver, numTokens);
-        return true;
-    }
-
-  
-
-   
 }
