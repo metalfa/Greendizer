@@ -1,5 +1,5 @@
 # Greendizer 0.0.3
-This is a project to set a nation to be finatially free. 
+This is a project to help a nation to be finatially free by providing a decentralized peer to peer cummunication solutions. 
 
 Features include:
 - Hot reloading
