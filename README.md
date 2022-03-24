@@ -1,5 +1,5 @@
-# Greendizer 0.1
-This is a primary version of a transaction method to set the Tunisian people free
+# Replit Solidity Template
+Welcome to the world of Ethereum and web3! This is a beta template for Solidity development on Replit. Solidity is the language used to create Smart Contracts, which are programs that run on the Ethereum Blockchain.
 
 Features include:
 - Hot reloading
