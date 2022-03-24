@@ -1,5 +1,5 @@
-# Replit Solidity Template
-Welcome to the world of Ethereum and web3! This is a beta template for Solidity development on Replit. Solidity is the language used to create Smart Contracts, which are programs that run on the Ethereum Blockchain.
+# Greendizer 0.0.3
+This is a project to set a nation to be finatially free. 
 
 Features include:
 - Hot reloading
@@ -9,9 +9,6 @@ Features include:
 - Replit testnet + faucet
 
 ## Getting started
-**Just press the `Run ▶️` button!**
-
-- You should only need to do this once (and might take like 15s). This will install all relevant packages, start up the contract deployment UI, and compile your `contract.sol` file.
 
 - `contract.sol` will automatically recompile whenever you edit it, and all your contracts inside of this file will be available to deploy from the UI.
 
@@ -33,8 +30,4 @@ We're working on some other features for making development here a lot easier, w
 
 ## Feedback
 
-Please leave any comments on this repl's [spotlight page here](https://replit.com/@replit/Solidity-starter-beta?v=1).
-
-The UI is subject to change (and still needs some real responsive work), so we'd appreciate any feedback there. 
-
-We're also trying to improve the overall dev experience, especially for beginners, so any feedback there is appreciated. 
+Please leave any comments on this project on bensassi.faysel@gmail.com
