@@ -443,7 +443,7 @@ export default function App() {
           padding: 40,
         }}
       >
-        <h1 style={{ textAlign: "center" }}>Greendizer 🤝 Ethereum</h1>
+        <h1 style={{ textAlign: "center" }}>Greendizer 🤝 Tarwachni</h1>
         <a
           style={{ whiteSpace: "nowrap" }}
           href="https://metamask.io/"
@@ -525,7 +525,7 @@ export default function App() {
             className="main-title"
             style={{ paddingBottom: "var(--space-8)" }}
           >
-            Greendizer 🤝 Ethereum
+            Greendizer 🤝 Tarwachni
           </h1>
           {walletAddress && <ChainInfo chainId={chainId} />}
         </VStack>
