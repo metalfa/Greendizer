@@ -9,7 +9,7 @@ NOTE: THIS WILL NOT BE AUTOMATICALLY COMPILED.
 If you want it to compile, either import it into contract.sol or copy and paste the contract directly into there!
 **/
 
-contract SimpleToken {
+contract Greendizer {
     // An address is comparable to an email address - it's used to identify an account on Ethereum.
     address public owner;
     uint256 public  token_supply = 1000000000000;
