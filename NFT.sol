@@ -12,7 +12,7 @@ NOTE: THIS WILL NOT BE AUTOMATICALLY COMPILED.
 If you want it to compile, either import it into contract.sol or copy and paste the contract directly into there!
 **/
 
-contract SimpleNFT is ERC721URIStorage, Ownable {
+contract IssueToFix is ERC721URIStorage, Ownable {
 		uint256 public tokenCounter = 0;
 
 		// You can pass in your own NFT name and symbol (like a stock ticker) here!
